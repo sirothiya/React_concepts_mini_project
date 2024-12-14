@@ -1,0 +1,78 @@
+.App {
+    /* text-align: center; */
+    height: 100%;
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   
+  }
+  
+  .form-data{
+    /* background-color: #7ab2c2; */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0,0,0.2) ;
+  }
+  
+  .labels{
+    /* margin-left: -8rem; */
+  
+  }
+  .input-data{
+    outline: black;
+    border-width: 2px;
+    padding: 6px
+  }
+  
+  .checkbox-div{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .address-div{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .address-div-category{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .save-btn{
+    background-color: rgb(136, 136, 219);
+    color: white;
+    border-radius: 3px;
+    padding: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0,0,0.2);
+    font-size: bold;
+    font-size: medium;
+  
+  }
+  legend{
+    all: unset;
+  
+  }
+  
+  
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
