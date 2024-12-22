@@ -38,9 +38,9 @@ const SignUpForm = ({ setIslogged }) => {
       </div>
       <form onSubmit={submitHandler}>
         <div>
-          <lable>
-            <p>
-              First Name <sup>*</sup>
+          <lable >
+            <p className="text-[0.875rem] text-slate-200 mb-0.5 leading-[1.375rem]">
+              First Name <sup className="text-red-400">*</sup>
             </p>
             <br></br>
             <input
@@ -54,8 +54,8 @@ const SignUpForm = ({ setIslogged }) => {
           </lable>
           <br></br>
           <lable>
-            <p>
-              Last Name <sup>*</sup>
+            <p className="text-[0.875rem] text-slate-200 mb-0.5 leading-[1.375rem]">
+              Last Name <sup className="text-red-400">*</sup>
             </p>
             <br></br>
             <input
@@ -70,8 +70,8 @@ const SignUpForm = ({ setIslogged }) => {
         </div>
         <br></br>
         <lable>
-          <p>
-            Email Address <sup>*</sup>
+          <p className="text-[0.875rem] text-slate-200 mb-0.5 leading-[1.375rem]">
+            Email Address <sup className="text-red-400">*</sup>
           </p>
           <br></br>
           <input
@@ -86,8 +86,8 @@ const SignUpForm = ({ setIslogged }) => {
         <br></br>
         <div>
           <lable>
-            <p>
-              Create Password <sup>*</sup>
+            <p className="text-[0.875rem] text-slate-200 mb-0.5 leading-[1.375rem]">
+              Create Password <sup className="text-red-400">*</sup>
             </p>
             <br></br>
             <input
@@ -108,8 +108,8 @@ const SignUpForm = ({ setIslogged }) => {
           </lable>
 
           <lable>
-            <p>
-              Confirm Password <sup>*</sup>
+            <p className="text-[0.875rem] text-slate-200 mb-0.5 leading-[1.375rem]">
+              Confirm Password <sup className="text-red-400">*</sup>
             </p>
             <br></br>
             <input
