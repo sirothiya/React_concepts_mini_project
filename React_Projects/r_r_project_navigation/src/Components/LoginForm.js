@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import { Link, useNavigate } from "react-router-dom";
-import { toast } from "react-toastify";
+import { toast } from "react-hot-toast";
 
 const LoginForm = ({ setIslogged }) => {
   const navigate = useNavigate();
@@ -21,7 +21,7 @@ const LoginForm = ({ setIslogged }) => {
   const submitHandler = (event) => {
     event.preventDefault(event);
     setIslogged(true);
-    toast("logged in");
+    toast.success("logged in");
     navigate("/dashboard");
   };
   return (
@@ -29,7 +29,7 @@ const LoginForm = ({ setIslogged }) => {
       onSubmit={submitHandler}
       className="flex flex-col w-full gap-y-4 mt-6"
     >
-      <div className="flex flex-col w-full gap-y-2">
+      <div className="flex flex-col w-full gap-y-2 ">
         <label htmlFor="email" className="w-full">
           <p className="text-[0.875rem] text-slate-200 mb-0.5 leading-[1.375rem]">
             Email Address <sup className="text-red-400">*</sup>
@@ -47,7 +47,7 @@ const LoginForm = ({ setIslogged }) => {
         />
       </div>
 
-      <div className="flex flex-col w-full relative gap-y-2">
+      <div className="flex flex-col w-full relative gap-y-2 ">
         <label htmlFor="password" className="w-full">
           <p className="text-[0.875rem] text-slate-200 mb-0.5 leading-[1.375rem]">
             Enter Password <sup className="text-red-400">*</sup>

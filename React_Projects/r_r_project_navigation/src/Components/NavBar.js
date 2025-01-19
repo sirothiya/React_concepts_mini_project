@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { toast } from "react-toastify";
+import { toast } from "react-hot-toast";
 
 const NavBar = ({ isLogged, setLoggedIn }) => {
   return (
@@ -49,7 +49,7 @@ const NavBar = ({ isLogged, setLoggedIn }) => {
               className="bg-slate-800 text-white py-[8px] px-[12px] rounded-[8px] border-black "
               onClick={() => {
                 setLoggedIn(false);
-                toast("Logged Out ");
+                toast.success("Logged Out ");
               }}
             >
               Logout
